@@ -1,0 +1,16 @@
+name: 绘宝的记忆
+display_name: 绘宝的记忆
+short_desc: 从聊天里挑出关于绘梨衣的长期信息记下来，每轮按话题召回；也能手动记、查、忘。
+desc: 从对话里自动抽取关于绘梨衣的长期记忆（事实/偏好/计划），每轮按话题召回注入，也能手动记/查/忘。
+version: 0.1.0
+author: 绘宝
+help: |-
+  管理命令：
+  - 记忆（看统计和最近几条）
+  - 记忆 查 关键词
+  - 记忆 忘 关键词
+
+  模型工具：memory_remember / memory_search / memory_forget
+
+  存储是 data/memory.jsonl，坏一行只丢一行。配置里能调每轮召回条数和注入字数上限。
+repo: ""

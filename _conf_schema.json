@@ -1,0 +1,42 @@
+{
+  "enabled": {
+    "description": "总开关",
+    "type": "bool",
+    "default": true
+  },
+  "inject_enabled": {
+    "description": "每轮把相关记忆注入系统提示词",
+    "type": "bool",
+    "default": true
+  },
+  "inject_limit": {
+    "description": "按话题召回的条数",
+    "type": "int",
+    "default": 6
+  },
+  "min_score": {
+    "description": "召回最低相关度(0-1)，越高越严格",
+    "type": "float",
+    "default": 0.3
+  },
+  "recent_inject": {
+    "description": "额外附带最近更新的几条",
+    "type": "int",
+    "default": 4
+  },
+  "auto_extract": {
+    "description": "每轮自动抽取长期记忆",
+    "type": "bool",
+    "default": true
+  },
+  "extract_provider": {
+    "description": "抽取用哪个模型(留空=当前会话模型，建议填便宜的小模型)",
+    "type": "string",
+    "default": ""
+  },
+  "extract_gap": {
+    "description": "同一会话两次抽取的最小间隔(秒)",
+    "type": "int",
+    "default": 20
+  }
+}
